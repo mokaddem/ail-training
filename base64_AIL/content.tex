@@ -1,0 +1,193 @@
+% DO NOT COMPILE THIS FILE DIRECTLY!
+% This is included by the other .tex files.
+
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+
+% INSTALLATION
+\lstset{style=code}
+\begin{frame}[fragile]
+\frametitle{History of payements}
+    \begin{lstlisting}
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Header>
+      <ActivityId CorrelationId="76df6655-003d-4f75-bf77-760c0b767e53" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">00000000-0000-0000-0000-000000000000</ActivityId>
+   </s:Header>
+   <s:Body>
+      <ObterPdfFaturaResponse xmlns="http://tempuri.org/">
+         <ObterPdfFaturaResult xmlns:a="http://schemas.datacontract.org/2004/07/PAN.Entidades.CRM" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:FaultCode i:nil="true"/>
+            <a:FaultDetail i:nil="true"/>
+            <a:FaultMessage i:nil="true"/>
+            <a:UUID i:nil="true"/>
+            <a:MensagemRetorno>Fatura obtida com sucesso. Conte??do na propriedade 'PDF'</a:MensagemRetorno>
+            <a:PDF>JVBERi0xLjQKJeLjz9MNCjUgMCBvYmo [...]
+            </ObterPdfFaturaResult>
+      </ObterPdfFaturaResponse>
+   </s:Body>
+</s:Envelope>
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+% Paste: /home/ail/git/AIL-framework/PASTES/archive/gist.github.com/2018/10/05/EvertonVictor_32f440720ed9b12cc533f50b507200ce.gz
+    \includegraphics[width=1.0\linewidth]{pics/payementHistory.png}
+\end{frame}
+
+%% INVOICE
+\begin{frame}[fragile]
+\frametitle{Invoice 1}
+\begin{lstlisting}
+JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7AFAAZQByAHMAZw [...]
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+%Paste: /home/ail/git/AIL-framework/PASTES/archive/pastebin.com_pro/2018/09/10/1LsJqYJA.gz
+    \includegraphics[width=1.0\linewidth]{pics/invoice1.png}
+\end{frame}
+
+%% INVOICE 2
+\begin{frame}[fragile]
+\frametitle{Invoice 2}
+\begin{lstlisting}
+{
+	"invoiceNumber": 123,
+        "file": "JVBERi0xLjQNJeLjz9MNCjQgMCBvYmoNPDwvTGluZWFyaXp [...]
+	"error": null
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+%Paste: /home/ail/git/AIL-framework/PASTES/archive/pastebin.com_pro/2018/09/11/ctcbQDpP.gz
+    \includegraphics[width=1.0\linewidth]{pics/invoice2.png}
+\end{frame}
+
+%% String
+\begin{frame}[fragile]
+\frametitle{String}
+\begin{lstlisting}
+"9j4QBYRXhpZgAATU0AKgAAAAgABIdpAAQAAAABAAAAPgESAAMAAAQ [...]
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+%Paste: /home/ail/git/AIL-framework/PASTES/archive/pastebin.com_pro/2018/09/11/ctcbQDpP.gz
+    \centering
+    \includegraphics[width=0.7\linewidth]{pics/string.jpeg}
+\end{frame}
+
+%% string2
+\begin{frame}[fragile]
+\frametitle{String 2}
+\begin{lstlisting}
+data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wC [...]
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+%Paste: /home/ail/git/AIL-framework/PASTES/archive/pastebin.com_pro/2018/09/11/ctcbQDpP.gz
+    \centering
+    \includegraphics[width=0.7\linewidth]{pics/string2.jpeg}
+\end{frame}
+
+%% json
+\begin{frame}[fragile]
+\frametitle{JSON}
+\begin{lstlisting}
+{
+    "application":{},
+    "customerReference":"11_1526620663",
+    "journeyID":279,
+    "company":null,
+    "person":[
+        {"documents":
+            {"Images":
+                {"Documents":[
+                    {"Type":"Image",
+                    "Pages":[
+                        {"Filename":"passport_front.jpeg",
+                        "ImageBase64":"/9j/7QBCUGhvdG9 [...]
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+%Paste: /home/ail/git/AIL-framework/PASTES/archive/pastebin.com_pro/2018/09/11/ctcbQDpP.gz
+    \centering
+    \includegraphics[width=0.7\linewidth]{pics/json.jpeg}
+\end{frame}
+
+
+%% json 2
+\begin{frame}[fragile]
+\frametitle{JSON 2}
+\begin{lstlisting}
+[...]
+],
+"text/html": [
+   "\n",
+   "                <audio controls=\"controls\" >\n",
+   "                    <source src=\"data:audio/wav;base64,UklGRnR1DQBXQVZFZm10IBAAAA [...]
+[...]
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+%Paste: /home/ail/git/AIL-framework/PASTES/archive/pastebin.com_pro/2018/09/11/ctcbQDpP.gz
+    \centering
+    \begin{LARGE}
+        SOUND!
+    \end{LARGE}
+\end{frame}
+
+
+%% json 3
+\begin{frame}[fragile]
+\frametitle{JSON 3}
+\begin{lstlisting}
+{
+  "info": {
+    "title": "cam to gif",
+    "author": "forresto",
+    "description": "webcam to animated gif",
+    "url": "back-away-slowly"
+  },
+  "nodes": [
+    {
+      "id": 4,
+      "src": "meemoo:video/player",
+      "x": 157,
+      "y": 96,
+      "w": 254,
+      "h": 288,
+      "state": {
+        "volume": 1,
+        "url": "data:video/mp4;base64,AAAAHGZ0eXBtcDQyAA[...]
+
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+%Paste: /home/ail/git/AIL-framework/PASTES/archive/gist.github.com/2018/10/11/forresto_efe2ea80b8944ea8f2849cddf252638b.gz
+    \centering
+    \begin{LARGE}
+        VIDEO!
+    \end{LARGE}
+\end{frame}
+
+
+%% raw
+\begin{frame}[fragile]
+\frametitle{Raw}
+\begin{lstlisting}
+RawUEsDBBQAAAAIACKYNk2lfHWTpAAAAOoAAAAHABwAY29tcC5weV [...]
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+%Paste: /home/ail/git/AIL-framework/PASTES/archive/pastebin.com_pro/2018/09/24/y4Pkfw0N.gz
+    \centering
+    \includegraphics[width=0.7\linewidth]{pics/zip1.png}
+\end{frame}
